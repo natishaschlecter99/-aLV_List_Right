@@ -1,0 +1,2 @@
+# -aLV_List_Right
+Case $cDisplay_Right_Button $aLV_List_Right = _GUIListViewEx_ReturnArray($iLV_Right_Index) If Not @error Then _ArrayDisplay($aLV_List_Right, "Returned Right") Else MsgBox(0, "Right", "Empty Array") EndIf Case $cCombo_Row Switch GUICtrlRead($cCombo_Row) Case 0 GUICtrlSetData($cCombo_Col, 0) Case Else If GUICtrlRead($cCombo_Col) = 0 Then GUICtrlSetData($cCombo_Col, GUICtrlRead($cCombo_Row))
